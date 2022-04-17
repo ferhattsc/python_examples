@@ -1,38 +1,42 @@
-def Topla(x, y):
+def sum_of_numbers(x, y):
    return x + y
  
-def Cikar(x, y):
+def ext_of_numbers(x, y):
    return x - y
  
-def Carp(x, y):
+def imp_of_numbers(x, y):
    return x * y
  
-def Bol(x, y):
+def div_of_numbers(x, y):
    return x / y
  
-print("Yapilacak Islemi Seciniz:")
-print("-------------------------")
-print("1. Toplama")
-print("2. Cikarma")
-print("3. Carpma")
-print("4. Bolme")
+def main():
+    
+    print("Choose your option:")
+    print("-------------------------")
+    print("1. +")
+    print("2. -")
+    print("3. *")
+    print("4. /")
 
-secim = input("Seciminiz (1/2/3/4):")
- 
-sayi1 = int(input("1. Sayi: "))
-sayi2 = int(input("2. Sayi: "))
- 
-if secim == '1':
-   print(sayi1,"+",sayi2,"=", Topla(sayi1,sayi2))
- 
-elif secim == '2':
-   print(sayi1,"-",sayi2,"=", Cikar(sayi1,sayi2))
- 
-elif secim == '3':
-   print(sayi1,"*",sayi2,"=", Carp(sayi1,sayi2))
- 
-elif secim == '4':
-   print(sayi1,"/",sayi2,"=", Bol(sayi1,sayi2))
-else:
-   print("Gecersiz Giris")
- 
+    secim = input("Options (1/2/3/4):")
+    
+    sayi1 = int(input("1. Number: "))
+    sayi2 = int(input("2. Number: "))
+    
+    if secim == '1':
+        print(sayi1,"+",sayi2,"=", sum_of_numbers(sayi1,sayi2))
+    
+    elif secim == '2':
+        print(sayi1,"-",sayi2,"=", ext_of_numbers(sayi1,sayi2))
+    
+    elif secim == '3':
+        print(sayi1,"*",sayi2,"=", imp_of_numbers(sayi1,sayi2))
+    
+    elif secim == '4':
+        print(sayi1,"/",sayi2,"=", div_of_numbers(sayi1,sayi2))
+    else:
+        print("Wrong")
+
+if __name__ == "__main__":
+    main()
