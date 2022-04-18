@@ -3,7 +3,6 @@ def factorial(n):
        return n
    else:
        return n*factorial(n-1)
-
 num = int(input("Enter number:"))
 
 if num < 0:
