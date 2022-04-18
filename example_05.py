@@ -1,0 +1,6 @@
+short=int(input("Short Edge: "))
+long=int(input("Long Edge:"))
+area=int(long)*int(short)
+circle=2*(int(long)+int(short))
+print("Area: {0}" .format(area))
+print("Circle: {0}" .format(circle))
